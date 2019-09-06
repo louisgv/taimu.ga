@@ -5,10 +5,12 @@
         <meta charset="utf-8">
         <title>404 - HALP</title>
         <script>
-            console.log(location.pathname)
+            console.log('404', location)
             sessionStorage.setItem('pathname', location.pathname)
-            window.location.pathname = '/'
         </script>
+        <meta http-equiv="refresh"
+              content="0;URL='/'">
+        </meta>
         <!-- 
         Minim id tempor nisi cupidatat aliquip commodo sit labore commodo esse consectetur adipisicing occaecat labore. Ea est dolor ipsum dolore veniam pariatur ipsum minim cillum. Occaecat esse irure duis dolore culpa proident consectetur ea minim consectetur. Sunt incididunt occaecat mollit nulla mollit ea fugiat. Laborum veniam ex in anim.
 
