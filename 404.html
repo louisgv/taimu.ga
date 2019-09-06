@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Single Page Apps for GitHub Pages</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafrex/spa-github-pages
-      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-      // ----------------------------------------------------------------------
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
-      // This way the code will only replace the route part of the path, and not
-      // the real directory in which the app resides, for example:
-      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
-      // Otherwise, leave segmentCount as 0.
-      var segmentCount = 0;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
-  </head>
-  <body>
-  </body>
+
+    <head>
+        <meta charset="utf-8">
+        <title>404 - HALP</title>
+        <script>
+            sessionStorage.redirect = location.pathname
+        </script>
+        <meta http-equiv="refresh"
+              content="0;URL='/'">
+        </meta>
+        <!-- 
+        Minim id tempor nisi cupidatat aliquip commodo sit labore commodo esse consectetur adipisicing occaecat labore. Ea est dolor ipsum dolore veniam pariatur ipsum minim cillum. Occaecat esse irure duis dolore culpa proident consectetur ea minim consectetur. Sunt incididunt occaecat mollit nulla mollit ea fugiat. Laborum veniam ex in anim.
+
+        Fugiat ea cupidatat non ullamco pariatur consectetur excepteur ad pariatur officia et sunt ipsum. Excepteur esse irure enim sit anim dolor sit id incididunt id amet aliquip laboris nostrud. Dolor labore occaecat culpa id sunt aute. Commodo enim consequat sint nisi anim ea sint Lorem ut consectetur. Enim cillum est ex laboris sunt eu dolore.
+
+        Qui voluptate commodo qui ullamco ea magna eiusmod dolor. Veniam laboris exercitation nostrud velit laboris aliquip eu incididunt ea ad do amet. Eu dolore duis anim et fugiat eu elit laboris adipisicing elit.
+
+        Lorem voluptate esse deserunt excepteur sint laboris nostrud sit aliqua labore incididunt est est duis. Amet anim nulla tempor proident. Proident pariatur nulla eiusmod qui dolor sunt non. Cillum voluptate quis do pariatur. Ullamco laboris minim ea laboris irure.
+
+        Eu irure officia cupidatat voluptate pariatur duis. Nostrud nisi est cillum nisi aliquip aute. Laboris reprehenderit do est nulla ut adipisicing fugiat ut dolore esse voluptate. Deserunt aliquip nisi Lorem amet Lorem sit officia magna tempor labore id proident exercitation. Do excepteur ipsum laboris labore voluptate labore anim adipisicing commodo. Fugiat anim nisi laboris ex excepteur. Eu cillum sunt veniam consectetur eiusmod.
+       -->
+    </head>
+
+    <body>
+    </body>
+
 </html>
