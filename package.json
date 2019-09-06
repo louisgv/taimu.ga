@@ -1,7 +1,7 @@
 {
   "name": "taimu.ga",
   "description": "Get time in your zone",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://taimu.ga/",
   "private": true,
   "repository": "louisgv/taimu.ga",
