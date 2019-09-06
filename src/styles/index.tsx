@@ -10,14 +10,14 @@ export const theme: DefaultTheme = {
 
     divider: '#BDBDBD',
 
-    primary: '#9C27B0',
-    lightPrimary: '#E1BEE7',
-    darkPrimary: '#7B1FA2',
-    accentColor: '#7C4DFF',
+    primary: '#200f21',
+    darkPrimary: '#382039',
+    lightPrimary: '#5a3d5c',
+    accentColor: '#f638dc',
     
     disabled: '#aaa',
 
-    idle: '#bc7eb6',
+    idle: '#f638dc',
     pending: '#E7AB48',
     running: '#3772FF',
     success: '#16b50c',
@@ -73,7 +73,7 @@ export const Global = createGlobalStyle`
 
   a:hover,
   a:visited:hover {
-    color: ${p => p.theme.color.lightPrimary};
+    opacity: 0.7;
   }
 
   ::-webkit-scrollbar {
@@ -86,7 +86,7 @@ export const Global = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background: ${p => p.theme.color.lightPrimary};
+    background: ${p => p.theme.color.text};
   }
 `
 

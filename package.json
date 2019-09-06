@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "homepage": "https://louisgv.ga/taimu.ga",
   "private": true,
+  "repository": "louisgv/taimu.ga",
   "dependencies": {
     "@craco/craco": "^5.4.0",
     "@hot-loader/react-dom": "^16.9.0",
@@ -10,10 +11,12 @@
     "@types/node": "12.7.4",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.12.12",
     "react-scripts": "3.1.1",
+    "react-spring": "^8.0.27",
     "styled-components": "^4.3.2",
     "typescript": "3.6.2"
   },

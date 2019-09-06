@@ -30,7 +30,11 @@ declare module 'styled-components' {
     }
 
     content: {}
-
+    
+    fontSize: {
+      header: number
+    }
+    
     font: {
       title: string
       subtitle: string
