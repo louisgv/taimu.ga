@@ -29,7 +29,7 @@ const parseArgv = argv => {
   return DateTime.local()
 }
 
-const pathname = sessionStorage.redirect || ''
+const pathname = sessionStorage.getItem('pathname') || ''
 
 const decodedPathname = decodeURI(pathname)
 
