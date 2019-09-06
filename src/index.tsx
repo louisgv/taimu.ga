@@ -29,17 +29,19 @@ const parseArgv = argv => {
   return DateTime.local()
 }
 
-const pathname = sessionStorage.getItem('pathname') || ''
+const { pathname } = window.location
+
+console.log({ pathname })
 
 const decodedPathname = decodeURI(pathname)
 
 const argv = decodedPathname.substr(1)
 
-console.log(argv)
+console.log({ argv })
 
 const inputTime = parseArgv(argv)
 
-console.log(inputTime)
+console.log({ inputTime })
 
 console.log(parseFloat(argv))
 
@@ -47,9 +49,10 @@ const outputTime = inputTime.toFormat('hh:mma Z')
 
 window.document.title = outputTime
 
-if (inputTime.toMillis() !== parseFloat(argv)) {
-  window.history.replaceState(null, null, '/' + inputTime.toMillis().toString())
-}
+// if (inputTime.toMillis() !== parseFloat(argv)) {
+  // window.location.pathname = '/' + inputTime.toMillis().toString()
+// }
+window.history.replaceState(null, null, '/' + inputTime.toMillis().toString())
 
 ReactDOM.render(<App showTime={outputTime} />, document.getElementById('root'))
 
