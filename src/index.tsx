@@ -29,7 +29,7 @@ const parseArgv = argv => {
   return DateTime.local()
 }
 
-const { pathname } = window.location
+const pathname = sessionStorage.redirect || ''
 
 const decodedPathname = decodeURI(pathname)
 
@@ -46,14 +46,12 @@ console.log(parseFloat(argv))
 const outputTime = inputTime.toFormat('hh:mma Z')
 
 window.document.title = outputTime
+
 if (inputTime.toMillis() !== parseFloat(argv)) {
-  window.location.pathname = inputTime.toMillis().toString()
-} else {
-  ReactDOM.render(
-    <App showTime={outputTime} />,
-    document.getElementById('root')
-  )
+  window.history.replaceState(null, null, '/' + inputTime.toMillis().toString())
 }
+
+ReactDOM.render(<App showTime={outputTime} />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
